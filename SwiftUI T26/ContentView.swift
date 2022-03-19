@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import SwiftUIX
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+        ZStack {
+            Text("Hello, world!")
+                .padding()
+                .font(.largeTitle)
+            VisualEffectBlurView(blurStyle: .dark)
+        }
+    } 
 }
 
 struct ContentView_Previews: PreviewProvider {
